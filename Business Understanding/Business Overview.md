@@ -38,7 +38,7 @@ Scenario 1 : Tanpa Model
 Dari total anggota yang melakukan peminjaman, bisa dikatakan bahwa hampir semua peminjaman diterima oleh pihak koperasi
 
 Scenario 2 : Dengan Model
-- Total anggota : 80.000 anggota
+- Total anggota : 100.000 anggota
 - Persentase resiko gagal bayar : 28.5%
 Dengan data historis anggota yang berbeda, terlihat peningkatan persentase resiko gagal bayar yang sangat signifikan. Ini bukan berarti tingkat gagal bayar meningkat, melainkan model berhasil mengungkap risiko gagal bayar yang tersembunyi.
 
@@ -53,8 +53,8 @@ Success Metrics
 Reject user dengan probability lebih dari 80%
 
 Hasil dari setiap metrik yang kami dapati dari model projek :
-- ROC-AUC : 0.87
-- Recall : 
-- KS-Statistic : 0.57
+- ROC-AUC : 0.92
+- Recall : 0.74
+- KS-Statistic : 0.58
 
-
+dataset resouce : [Give Me Some Credit](https://www.kaggle.com/competitions/GiveMeSomeCredit/overview)
