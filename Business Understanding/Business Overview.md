@@ -24,3 +24,10 @@ Di sisi lain, koperasi dihadapkan pada **trade-off antara risiko dan keuntungan*
 Business Objective
 -------------------------------------------------------
 Analisis dan Model yang kami bangun merepresentasikan prinsip 5C of Credit yang umum digunakan baik di perbankan maupun koperasi, dengan pendekatan berbasis data historis untuk meningkatkan objektivitas dalam penilaian kredit.
+
+Secara spesifik projek ini menargetkan :
+- Mengungkap risiko gagal bayar tersembunyi yang sebelumnya akan lolos tanpa pengawasan
+- Meningkatkan perkiraan keuntungan per pinjaman
+- 
+
+
