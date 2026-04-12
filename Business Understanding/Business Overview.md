@@ -24,3 +24,37 @@ Di sisi lain, koperasi dihadapkan pada **trade-off antara risiko dan keuntungan*
 Business Objective
 -------------------------------------------------------
 Analisis dan Model yang kami bangun merepresentasikan prinsip 5C of Credit yang umum digunakan baik di perbankan maupun koperasi, dengan pendekatan berbasis data historis untuk meningkatkan objektivitas dalam penilaian kredit.
+
+Secara spesifik projek ini menargetkan :
+- Mengungkap risiko gagal bayar tersembunyi yang sebelumnya akan lolos tanpa pengawasan
+- Meningkatkan perkiraan keuntungan per pinjaman
+- Menunjukkan nominal pinjaman sesuai dengan data historis anggota
+
+Business Impact Simulation (Conseptual)
+-------------------------------------------------------
+Scenario 1 : Tanpa Model
+- Data anggota : 150.000 anggota
+- Persentase resiko gagal bayar : 6.7%
+Dari total anggota yang melakukan peminjaman, bisa dikatakan bahwa hampir semua peminjaman diterima oleh pihak koperasi
+
+Scenario 2 : Dengan Model
+- Total anggota : 100.000 anggota
+- Persentase resiko gagal bayar : 28.5%
+Dengan data historis anggota yang berbeda, terlihat peningkatan persentase resiko gagal bayar yang sangat signifikan. Ini bukan berarti tingkat gagal bayar meningkat, melainkan model berhasil mengungkap risiko gagal bayar yang tersembunyi.
+
+Scenario 3 : Dengan scoring + limit
+- Low Risk : High Limit (Limit = (1 - risk probability) x income)
+- Medium Risk : Moderate Limit (Limit = 10% x income)
+- High Risk : Reject
+Dengan segmentasi tersebut, resiko lebih terkontrol dan revenue tetap berlangsung dengan baik.
+
+Success Metrics
+-------------------------------------------------------
+Reject user dengan probability lebih dari 80%
+
+Hasil dari setiap metrik yang kami dapati dari model projek :
+- ROC-AUC : 0.92
+- Recall : 0.74
+- KS-Statistic : 0.58
+
+dataset resouce : [Give Me Some Credit](https://www.kaggle.com/competitions/GiveMeSomeCredit/overview)
