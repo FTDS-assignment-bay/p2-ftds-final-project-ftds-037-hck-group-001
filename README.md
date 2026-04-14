@@ -203,9 +203,11 @@ LightGBM dipilih karena performa unggulnya pada data tabular yang tidak seimbang
 | > 0,75 | Sangat tinggi — validasi potensi overfitting |
 
 ### Hasil Metrik yang Didapatkan
-Nilai KS-Statistic : 0.58
-Nilai ROC-AUC : 0.92
-Nilai Recall : 0.74
+- Nilai KS-Statistic : 0.58
+
+- Nilai ROC-AUC : 0.92
+
+- Nilai Recall : 0.74
 
 ---
 
