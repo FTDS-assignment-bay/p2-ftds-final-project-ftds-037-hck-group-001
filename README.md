@@ -202,8 +202,10 @@ LightGBM dipilih karena performa unggulnya pada data tabular yang tidak seimbang
 | 0,60 – 0,75 | Sangat bagus |
 | > 0,75 | Sangat tinggi — validasi potensi overfitting |
 
-
+### Hasil Metrik yang Didapatkan
 Nilai KS-Statistic : 0.58
+Nilai ROC-AUC : 0.92
+Nilai Recall : 0.74
 
 ---
 
@@ -228,8 +230,8 @@ Threshold PD Score ditentukan dari titik cut-off optimal KS-Statistic dan distri
 | Segmen Risiko | PD Score | Keputusan Kredit | Limit |
 |---|---|---|---|
 | 🟢 **Low Risk** | < 0,43 | Disetujui | Limit tinggi — suku bunga standar |
-| 🟡 **Medium Risk** | 0,43 – 0,58 | Disetujui dengan review | Limit moderat — review manual oleh petugas |
-| 🔴 **High Risk** | ≥ 0,58 | Ditolak | Tidak ada kredit — rujukan edukasi keuangan |
+| 🟡 **Medium Risk** | 0,43 – 0,53 | Disetujui dengan review | Limit moderat — review manual oleh petugas |
+| 🔴 **High Risk** | ≥ 0,53 | Ditolak | Tidak ada kredit — rujukan edukasi keuangan |
 
 > Catatan: Threshold dikalibrasi berdasarkan tingkat gagal bayar portofolio (~6,7%) dan titik pemisahan optimal KS-Statistic. Threshold ini bukan konstanta tetap — rekalibrasi disarankan ketika diterapkan pada populasi peminjam baru.
 
